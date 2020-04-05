@@ -191,7 +191,7 @@ console.log(makeItFunny('I never look back', 3));
  */
 
 //lesson 77 https://ru.code-basics.com/languages/javascript/modules/loops/lessons/return-from-loops
-
+/*
 const hasChar = (str, char) => {
     let i = 0;
 
@@ -207,6 +207,27 @@ const hasChar = (str, char) => {
 }
 
 console.log(hasChar('Rently', 'o'));
+ */
+
+//lesson 78 https://ru.code-basics.com/languages/javascript/modules/loops/lessons/for
+
+const encrypt = (str) => {
+    let res = '';
+
+    for (let i = 0; i < str.length; i++) {
+
+        if (i !== str.length - 1) {
+            res += str[i + 1];
+        }
+
+        res += str[i];
+        i++;
+    }
+
+    return res;
+}
+
+encrypt('go12!');
 
 
 
